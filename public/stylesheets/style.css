@@ -4,10 +4,6 @@ body {
   color: #fff;
 }
 
-/* a {
-  color: #00b7ff;
-} */
-
 body {
   background-color: #000;
   max-width: 1000px;
@@ -18,11 +14,14 @@ body {
   font-size: 36px;
 }
 
-.new_msg_btn {
+.new_msg_btn,
+.submit_btn {
   color: #fff;
+  font-size: 20px;
   text-decoration: none;
   background: #00b7ff;
   padding: 12px;
+  border: none;
   border-radius: 5px;
 }
 
@@ -53,4 +52,32 @@ body {
 .msg_date {
   font-size: 12px;
   align-self: flex-end;
+}
+
+.new_msg_form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 16px;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.user_input,
+.msg_input {
+  font-size: 24px;
+  border: none;
+  padding: 12px;
+}
+
+.msg_input {
+  width: 100%;
 }

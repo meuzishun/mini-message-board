@@ -5,13 +5,22 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1>Create a new message</h1>
-    <form method="POST" action="/new">
-      <label for="messageUser">Author:</label>
-      <input type="text" name="messageUser" id="messageUser" />
-      <label for="messageText">Message:</label>
-      <textarea name="messageText" id="messageText"></textarea>
-      <button type="submit">Submit</button>
+    <h1 class="title">Create a new message</h1>
+    <form class="new_msg_form" method="POST" action="/new">
+      <label class="user_label" for="messageUser">Author:</label>
+      <input
+        class="user_input"
+        type="text"
+        name="messageUser"
+        id="messageUser"
+      />
+      <label class="msg_label" for="messageText">Message:</label>
+      <textarea
+        class="msg_input"
+        name="messageText"
+        id="messageText"
+      ></textarea>
+      <button class="submit_btn" type="submit">Submit</button>
     </form>
   </body>
 </html>
