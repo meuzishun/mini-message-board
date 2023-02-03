@@ -1,8 +1,56 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
-a {
-  color: #00B7FF;
+/* a {
+  color: #00b7ff;
+} */
+
+body {
+  background-color: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.new_msg_btn {
+  color: #fff;
+  text-decoration: none;
+  background: #00b7ff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.msg_board {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.msg_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 20px 40px;
+  background-color: #333;
+  color: #fff;
+}
+
+.msg_text {
+  font-size: 20px;
+}
+
+.msg_user {
+  font-size: 16px;
+}
+
+.msg_date {
+  font-size: 12px;
+  align-self: flex-end;
 }

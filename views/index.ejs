@@ -5,12 +5,15 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <a href="/new">Add a new message</a>
-    <div>
+    <h1 class="title"><%= title %></h1>
+    <a class="new_msg_btn" href="/new">Add a new message</a>
+    <div class="msg_board">
       <% messages.forEach((message) => { %>
-      <h2><%= message.text %></h2>
-      <p>-<%= message.user %> <span>(<%= message.added %>)</span></p>
+      <div class="msg_container">
+        <p class="msg_text"><%= message.text %></p>
+        <p class="msg_user">- <%= message.user %></p>
+        <p class="msg_date"><%= message.added %></p>
+      </div>
       <% }) %>
     </div>
   </body>
